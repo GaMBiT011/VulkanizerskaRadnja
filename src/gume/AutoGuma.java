@@ -32,9 +32,9 @@ public class AutoGuma {
 		return markaModel;
 	}
 /**
- * postavlja ime marke i modela na zadatu vrednost.
- * @param markaModel
- * @throws baca izuzetak u slucaju unosa nedozvoljenih vrednosti za ime Marke i Modela.
+ * postavlja ime marke i modela na z`adatu vrednost.
+ * @param markaModel ime marke i modela gume.
+ * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za ime marke i modela.
  */
 	public void setMarkaModel(String markaModel) {
 		if (markaModel == null || markaModel.length() < 3)
@@ -50,8 +50,8 @@ public class AutoGuma {
 	}
 /**
  * Postavlja precnik gume na zadatu vrednost.
- * @param precnik
- * @throws baca izuzetak u slucaju unosa nedozvoljenih vrednosti za precnik gume.
+ * @param precnik duzina precnika u incima.
+ * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za precnik gume.
  */
 	public void setPrecnik(int precnik) {
 		if (precnik < 13 && precnik > 22)
@@ -67,8 +67,8 @@ public class AutoGuma {
 	}
 /**
  * Postavlja sirinu gume na zadatu vrednost.
- * @param sirina
- * @throws baca izuzetak u slucaju unosa nedozvoljenih vrednosti za sirinu gume.
+ * @param sirina nova vrednost za sirinu gume
+ * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za sirinu gume.
  */
 	public void setSirina(int sirina) {
 		if (sirina < 135 && sirina > 355)
@@ -84,8 +84,8 @@ public class AutoGuma {
 	}
 /**
  * Postavlja visinu gume na zadatu vrednost.
- * @param visina
- * @throws baca izuzetak u slucaju unosa nedozvoljenih vrednosti za visinu gume.
+ * @param visina nova vrednost za visinu gume.
+ * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za visinu gume.
  */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
