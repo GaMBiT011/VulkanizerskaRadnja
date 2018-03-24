@@ -26,8 +26,8 @@ public class AutoGumaTest {
 
 	@Test
 	public void testsetMarkaModel() {
-		a.setMarkaModel("Fiat 500");
-		assertEquals("Fiat 500", a.getMarkaModel());
+		a.setMarkaModel("Pireli p zero");
+		assertEquals("Pireli p zero", a.getMarkaModel());
 	}
 
 	@Test(expected = java.lang.RuntimeException.class)
@@ -97,22 +97,22 @@ public class AutoGumaTest {
 
 	@Test
 	public void testtoString() {
-		a.setMarkaModel("Fiat 500");
+		a.setMarkaModel("Pireli p zero");
 		a.setPrecnik(19);
 		a.setSirina(200);
 		a.setVisina(60);
 		assertEquals(
-				"AutoGuma [markaModel=" + "Fiat 500" + ", precnik=" + 19 + ", sirina=" + 200 + ", visina=" + 60 + "]",
+				"AutoGuma [markaModel=" + "Pireli p zero" + ", precnik=" + 19 + ", sirina=" + 200 + ", visina=" + 60 + "]",
 				a.toString());
 	}
 
 	@Test
 	public void test1Equals() {
-		a.setMarkaModel("Fiat 500");
+		a.setMarkaModel("Pireli p zero");
 		a.setPrecnik(19);
 		a.setSirina(200);
 		a.setVisina(60);
-		a2.setMarkaModel("Fiat 500");
+		a2.setMarkaModel("Pireli p zero");
 		a2.setPrecnik(19);
 		a2.setSirina(200);
 		a2.setVisina(60);
@@ -120,11 +120,11 @@ public class AutoGumaTest {
 	}
 	@Test
 	public void test2Equals() {
-		a.setMarkaModel("Fiat 500");
+		a.setMarkaModel("Pireli p zero");
 		a.setPrecnik(19);
 		a.setSirina(200);
 		a.setVisina(60);
-		a2.setMarkaModel("Fiat 500");
+		a2.setMarkaModel("Pireli p zero");
 		a2.setPrecnik(19);
 		a2.setSirina(200);
 		a2.setVisina(90);
