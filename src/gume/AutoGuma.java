@@ -54,7 +54,7 @@ public class AutoGuma {
  * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za precnik gume.
  */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -71,7 +71,7 @@ public class AutoGuma {
  * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za sirinu gume.
  */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
