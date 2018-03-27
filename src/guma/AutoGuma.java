@@ -27,7 +27,7 @@ public class AutoGuma {
 	private int visina = 0;
 /**
  * Vraca ime marke i modela kao string.
- * @return ime marke i modela.
+ * @return markaModel ime marke i modela.
  */
 	public String getMarkaModel() {
 		return markaModel;
@@ -61,7 +61,7 @@ public class AutoGuma {
 	}
 /**
  * vraca sirinu gume.
- * @return sirinu gume.
+ * @return sirina gume.
  */
 	public int getSirina() {
 		return sirina;
