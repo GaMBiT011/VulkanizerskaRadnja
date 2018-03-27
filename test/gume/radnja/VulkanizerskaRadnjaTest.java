@@ -1,4 +1,5 @@
-package gume.radnja.test;
+
+package gume.radnja;
 
 import static org.junit.Assert.*;
 
