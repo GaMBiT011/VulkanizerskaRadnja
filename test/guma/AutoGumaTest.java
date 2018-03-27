@@ -1,4 +1,4 @@
-package gume;
+package guma;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import gume.AutoGuma;
+import guma.AutoGuma;
 
 public class AutoGumaTest {
 	private AutoGuma a, a2;

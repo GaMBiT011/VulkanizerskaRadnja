@@ -1,6 +1,7 @@
-package gume;
+package guma;
 /**
- * Klasa koja dodaje auto gumu sa nekim funkcijonalnostima.
+ * Klasa koja predstavlja auto gumu sa nekim funkcijonalnostima.
+ * 
  * @author Nikola Madic
  * @version 0.0.1
  * 
@@ -25,16 +26,16 @@ public class AutoGuma {
 	 */
 	private int visina = 0;
 /**
- * Craca ime marke i modela kao string.
+ * Vraca ime marke i modela kao string.
  * @return ime marke i modela.
  */
 	public String getMarkaModel() {
 		return markaModel;
 	}
 /**
- * postavlja ime marke i modela na z`adatu vrednost.
+ * postavlja ime marke i modela na zadatu vrednost.
  * @param markaModel ime marke i modela gume.
- * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za ime marke i modela.
+ * @throws java.lang.RuntimeException ako je markaModel null ili duzina Stringa kraca od 3 karaktera.
  */
 	public void setMarkaModel(String markaModel) {
 		if (markaModel == null || markaModel.length() < 3)
@@ -51,7 +52,7 @@ public class AutoGuma {
 /**
  * Postavlja precnik gume na zadatu vrednost.
  * @param precnik duzina precnika u incima.
- * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za precnik gume.
+ * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa precnika  manjeg od 13 ili veceg od 22.
  */
 	public void setPrecnik(int precnik) {
 		if (precnik < 13 || precnik > 22)
@@ -67,8 +68,8 @@ public class AutoGuma {
 	}
 /**
  * Postavlja sirinu gume na zadatu vrednost.
- * @param sirina nova vrednost za sirinu gume
- * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za sirinu gume.
+ * @param sirina nova vrednost za sirinu gume.
+ * @throws java.lang.RuntimeException ako je uneta sirina manja 135 ili veca od 355.
  */
 	public void setSirina(int sirina) {
 		if (sirina < 135 || sirina > 355)
@@ -85,7 +86,7 @@ public class AutoGuma {
 /**
  * Postavlja visinu gume na zadatu vrednost.
  * @param visina nova vrednost za visinu gume.
- * @throws java.lang.RuntimeException baca izuzetak u slucaju unosa nedozvoljenih vrednosti za visinu gume.
+ * @throws java.lang.RuntimeException ako je uneta visina manja od 25 ili veca 95.
  */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
@@ -93,7 +94,8 @@ public class AutoGuma {
 		this.visina = visina;
 	}
 /**
- * Pretvara klasu AutoGuma u String.
+ * Vraca String reprezentaciju klase AutoGuma i to:
+ * marku i model, precnik, sirinu i visinu gume.
  * @return AutoGuma kao string.
  */
 	@Override
@@ -102,7 +104,9 @@ public class AutoGuma {
 				+ visina + "]";
 	}
 /**
- * proverava da li su dve gume jednake.
+ * Proverava da li su dva objekta klase AutoGuma jednaki po
+ * atributima: markaModel,precnik,sirina,visina.
+ * 
  */
 	@Override
 	public boolean equals(Object obj) {

@@ -1,5 +1,5 @@
 
-package gume.radnja;
+package guma.radnja;
 
 import static org.junit.Assert.*;
 
@@ -13,8 +13,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import gume.AutoGuma;
-import gume.radnja.VulkanizerskaRadnja;
+import guma.AutoGuma;
+import guma.radnja.VulkanizerskaRadnja;
 
 public class VulkanizerskaRadnjaTest {
 	private VulkanizerskaRadnja v;

@@ -1,8 +1,8 @@
-package gume.radnja;
+package guma.radnja;
 
 import java.util.LinkedList;
 
-import gume.AutoGuma;
+import guma.AutoGuma;
 
 /**
  * Klasa koja opisuje Vulkanizesku radnju i neke njene funkcionalnosti.
@@ -19,9 +19,9 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Dodaje gumu u postojecu listu.
 	 * 
-	 * @param a objekat Autoguma koji dodajemo na stanje
-	 * @throws java.lang.RuntimeException baca izuzetak u slucaju da guma vec postoji na stanju.
-	 * @throws java.lang.NullPointerException baca izuzetak u slucajnu unosa nedozvoljenih vrednosti.
+	 * @param a nova guma.
+	 * @throws java.lang.RuntimeException baca izuzetak u slucaju da guma vec postoji u listi.
+	 * @throws java.lang.NullPointerException baca izuzetak u slucaju da je uneta guma null.
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
@@ -34,8 +34,8 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Pronalazi gume odredjenog modela i vraca ih kao novu listu.
 	 * 
-	 * @param markaModel ime marke i modela
-	 * @return {@link LinkedList} listu guma odredjene marke i modela.
+	 * @param markaModel ime marke i modela.
+	 * @return novaLista guma(sve gume koje imaju trazeni naziv markaModel).
 	 */
 	public LinkedList<AutoGuma> pronadjiGumu(String markaModel) {
 		if (markaModel == null)
