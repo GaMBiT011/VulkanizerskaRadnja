@@ -1,6 +1,6 @@
 package guma;
 /**
- * Klasa koja predstavlja auto gumu sa nekim funkcijonalnostima.
+ * Klasa koja predstavlja auto gumu sa nekim funkcionalnostima.
  * 
  * @author Nikola Madic
  * @version 0.0.1
